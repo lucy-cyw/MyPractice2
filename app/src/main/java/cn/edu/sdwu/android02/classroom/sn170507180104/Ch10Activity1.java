@@ -1,9 +1,11 @@
 package cn.edu.sdwu.android02.classroom.sn170507180104;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 public class Ch10Activity1 extends AppCompatActivity {
 private Integer  count;//计数器
@@ -16,6 +18,11 @@ private Integer  count;//计数器
         setContentView(R.layout.layout_ch10_1);
         Log.i(Ch10Activity1.class.toString(),"onCreate");
         count=0;
+        //接受素具
+        Intent intent=getIntent();//获取界面跳转时使用的intent
+        String text=intent.getStringExtra("text");
+        TextView textView=(TextView)findViewById(R.id.ch10_1_tv);
+        textView.setText(text);
 
     }
     public void finishClick(View view){
@@ -55,7 +62,8 @@ private Integer  count;//计数器
     }
 
     @Override
-    protected void onPause() {
+    protected void onPause()
+    {
         super.onPause();
     }
 
@@ -72,7 +80,7 @@ private Integer  count;//计数器
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i(Ch10Activity1.class.toString(),"onDestory");
+        Log.i(Ch10Activity1.class.toString(),"onstart");
 
     }
 
