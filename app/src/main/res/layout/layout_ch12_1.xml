@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
     <Button
         android:layout_width="wrap_content"
-        android:text="finish"
-        android:onClick="finishClick"
+        android:text="start_service"
+        android:onClick="start_service"
         android:layout_height="wrap_content" />
     <Button
         android:layout_width="wrap_content"
-        android:text="counter"
-        android:onClick="counter"
+        android:text="close_service"
+        android:onClick="close_service"
         android:layout_height="wrap_content" />
     <Button
         android:layout_width="wrap_content"
-        android:text="implicitStart"
-        android:onClick="implicitStart"
+        android:text="getRandom"
+        android:onClick="getRandom"
         android:layout_height="wrap_content" />
 
 </LinearLayout>
