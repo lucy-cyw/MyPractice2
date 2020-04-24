@@ -33,6 +33,7 @@ public class MyService2 extends Service {
     }
     //实际
     public int genRandom(){
+
         return random.nextInt();
     }
 }
