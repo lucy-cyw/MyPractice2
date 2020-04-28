@@ -51,7 +51,7 @@ public class Ch13Activity1 extends AppCompatActivity {
             String content=new String(bytes);
 
             fileInputStream.close();
-            Toast.makeText(this,content,Toast.LENGTH_LONG).show();
+            Toast.makeText(this,content+"",Toast.LENGTH_LONG).show();
 
         }catch(Exception e){
             Log.e(Ch13Activity1.class.toString(),e.toString());

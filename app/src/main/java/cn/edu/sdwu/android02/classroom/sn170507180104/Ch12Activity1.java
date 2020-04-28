@@ -37,7 +37,7 @@ public class Ch12Activity1 extends AppCompatActivity {
 
             }
 
-        }
+        };
     }
 
 
