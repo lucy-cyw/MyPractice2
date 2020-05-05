@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -56,6 +57,7 @@ public class Ch10Activity2 extends AppCompatActivity {
                 if(resultCode==RESULT_OK){
                     String content=data.getDataString();
                     //得到联系人信息（联系人编号，lookup uri）
+                    Log.i(Ch10Activity2.class.toString(),data.getData().toString());
                     Toast.makeText(this,content, Toast.LENGTH_LONG).show();
 
                 }
